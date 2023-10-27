@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Form Handling Example</title>
+</head>
+<style>
+    /* Define CSS styles */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #081c8d28;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        color: #0f0101;
+    }
+    
+    p {
+        font-size: 20px;
+        color: #141010;
+    }
+    
+    .important-text {
+        font-weight: bold;
+        color: #ff5733;
+    }
+</style>
+<body>
+    <h1>Welcome to Comfy Real Estate </h1>
+    <nav>
+        <a href="C:\Users\HP\page5.html">Contact page</a>
+    </nav>
+    
+    <form id="Hello and Thank You for visiting">
+        <label for="name">Enter Your Name: </label>
+        <label><input type="text" id="name" placeholder="Your Name">
+        <button type="button" id="greetButton">Greet Me</button>
+    </form>
+     
+    <p id="Step inside and Explore"></p>
+    
+    <script>
+        // JavaScript code to handle form submission
+        document.getElementById("greetButton").addEventListener("click", function () {
+            // Get the user's name from the input field
+            var userName = document.getElementById("name").value;
+            
+            // Display a greeting message
+            var Display = "Hello, " + userName + "!";
+            document.getElementById("greetingMessage").textContent = greetingMessage;
+        });
+    </script>
+</body>
+</html>
